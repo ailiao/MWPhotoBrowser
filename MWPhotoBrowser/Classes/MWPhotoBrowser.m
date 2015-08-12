@@ -2,7 +2,7 @@
 //  MWPhotoBrowser.m
 //  MWPhotoBrowser
 //
-//  Created by Michael Waterfall on 14/10/2010.
+//  Created by Michael Waterfall on 14/10/2010.activityViewController
 //  Copyright 2010 d3i. All rights reserved.
 //
 
@@ -1500,13 +1500,13 @@
                     self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
                     
                     // Show loading spinner after a couple of seconds
-                    double delayInSeconds = 2.0;
-                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-                        if (self.activityViewController) {
-                            [self showProgressHUDWithMessage:nil];
-                        }
-                    });
+                    //double delayInSeconds = 2.0;
+                    //dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                    //dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                    //    if (self.activityViewController) {
+                    //        [self showProgressHUDWithMessage:nil];
+                    //    }
+                    //});
 
                     // Show
                     typeof(self) __weak weakSelf = self;
